@@ -19,6 +19,10 @@ async def load_model():
     """
     print("Model loaded and ready.")
 
+@app.get("/")
+async def hello_world():
+    return "Hello World"
+
 @app.post("/translate/")
 async def translate_text(request: Request):
     """
