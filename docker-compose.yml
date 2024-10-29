@@ -1,9 +1,9 @@
 version: "3.8"
 
 services:
-  raidtl-app:
+  commstl-app:
     build: .
-    container_name: raidtl-container
+    container_name: commstl-container
     ports:
       - "8000:8000"
     environment:
